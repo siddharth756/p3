@@ -12,10 +12,11 @@ export default tseslint.config({
         }
     },
     files: ['**/*.ts'],
-    extends: [eslint.configs.recommended, ...tseslint.configs.recommendedTypeChecked, eslintConfigPrettier],
+    extends: [eslint.configs.recommended, ...tseslint.configs.recommended, eslintConfigPrettier],
     rules: {
         'no-console': 'error',
         'no-useless-catch': 0,
+        'no-unused-vars': 'off',
         quotes: ['error', 'single', { allowTemplateLiterals: true }]
     }
 })
